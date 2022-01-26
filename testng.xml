@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TutorialninjaProject">
+	
+	<test thread-count="5" name="Registration">
+	
+	<groups>
+	<run>
+	<include name="smoke">
+	</include>
+	</run>
+	</groups>
+		<classes>
+			<class name="maventraining.TutorialninjaRegTest" >
+			</class>
+		</classes>
+	</test>
+
+	<test thread-count="5" name="Login">
+	<groups>
+	<run>
+	<include name="smoke">
+	</include>
+	</run>
+	</groups>
+		<classes>
+			<class name="maventraining.TutorialsninjaloginTest" >
+			</class>
+		</classes>
+	</test>
+	<!--  
+	<test thread-count="5" name="Search box">
+		<classes>
+			<class name="maventraining.SearchboxTest" >
+			</class>
+		</classes>
+	</test>
+
+
+	<test thread-count="5" name="Screenshot">
+		<classes>
+			<class name="maventraining.ScreenshotTest" >
+			</class>
+		</classes>
+	</test>
+	
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="maventraining.OneTest" >
+			</class>
+		</classes>
+	</test> 
+	
+	-->
+	
+</suite> <!-- Suite -->
